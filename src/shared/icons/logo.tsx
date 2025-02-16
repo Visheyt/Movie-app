@@ -12,8 +12,8 @@ export const LogoIcon = () => {
         fill="#E60000"
       />
       <path
-        fill-rule="evenodd"
-        clip-rule="evenodd"
+        fillRule="evenodd"
+        clipRule="evenodd"
         d="M24.6304 24.6828C24.6304 23.4735 25.927 22.7068 26.9866 23.2897L36.7729 28.6721C37.8713 29.2762 37.8713 30.8544 36.7729 31.4585L26.9866 36.841C25.9269 37.4238 24.6304 36.6571 24.6304 35.4478V24.6828Z"
         fill="white"
       />
