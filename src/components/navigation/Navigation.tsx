@@ -1,14 +1,7 @@
 import { Link } from "@tanstack/react-router";
 import styles from "./navigation.module.css";
-import { useEffect } from "react";
-import { getGenres } from "../../api/getGenres";
 
 export const Navigation = () => {
-  useEffect(() => {
-    getGenres()
-      .then((res) => console.log(res))
-      .catch((err) => console.error(err));
-  }, []);
   return (
     <nav className={styles.container}>
       <Link

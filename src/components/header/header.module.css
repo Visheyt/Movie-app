@@ -3,6 +3,6 @@
   width: 100%;
   justify-content: space-between;
   max-width: 1921px;
-  padding: 43px 162px;
+  padding-block: 43px;
   align-items: center;
 }

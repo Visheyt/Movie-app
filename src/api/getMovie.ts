@@ -1,19 +1,17 @@
 import { addRequestInfo, requestInit } from "./baseApi";
 
-const GENRE_ENDPOINT = "/genre/movie/list";
+const MOVIE_ENDPOINT = "/search/movie";
 
-interface IGenre {
-  id: number;
-  name: string;
-}
-export const getGenres: () => Promise<IGenre[]> = async () => {
+export const getMovie: (query: string) => Promise<unknown[]> = async (
+  query
+) => {
   try {
     const response = await fetch(
-      addRequestInfo(GENRE_ENDPOINT, "en-US"),
+      addRequestInfo(MOVIE_ENDPOINT, "en-US", query),
       requestInit
     );
     if (!response.ok) {
-      throw new Error("I can`t get genres");
+      throw new Error("I can`t get movie");
     }
     return response.json();
   } catch (err) {

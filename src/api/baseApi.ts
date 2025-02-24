@@ -7,3 +7,11 @@ export const requestInit = {
     Authorization: `Bearer ${ACCESS_TOKEN}`,
   },
 };
+
+export const addRequestInfo = (
+  endPoint: string,
+  language: "en-US" | "ru-RU",
+  query = ""
+) => {
+  return `${BASE_URL}${endPoint}?query=${query}&language=${language}`;
+};
